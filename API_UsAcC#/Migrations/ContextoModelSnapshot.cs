@@ -67,7 +67,7 @@ namespace API_UsAcC_.Migrations
                     b.Property<string>("email_usuario")
                         .HasColumnType("text");
 
-                    b.Property<bool?>("estaBloqueado_usuario")
+                    b.Property<bool?>("establoqueado_usuario")
                         .HasColumnType("boolean");
 
                     b.Property<DateTime?>("fch_alta_usuario")

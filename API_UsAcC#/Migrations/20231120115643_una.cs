@@ -41,7 +41,7 @@ namespace API_UsAcC_.Migrations
                     tlf_usuario = table.Column<string>(type: "text", nullable: true),
                     email_usuario = table.Column<string>(type: "text", nullable: true),
                     clave_usuario = table.Column<string>(type: "text", nullable: false),
-                    estaBloqueado_usuario = table.Column<bool>(type: "boolean", nullable: true),
+                    establoqueado_usuario = table.Column<bool>(type: "boolean", nullable: true),
                     fch_fin_bloqueo_usuario = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
                     fch_alta_usuario = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),
                     fch_baja_usuario = table.Column<DateTime>(type: "timestamp without time zone", nullable: true),

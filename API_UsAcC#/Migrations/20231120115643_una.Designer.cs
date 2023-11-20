@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API_UsAcC_.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20231110133416_una")]
+    [Migration("20231120115643_una")]
     partial class una
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -69,7 +69,7 @@ namespace API_UsAcC_.Migrations
                     b.Property<string>("email_usuario")
                         .HasColumnType("text");
 
-                    b.Property<bool?>("estaBloqueado_usuario")
+                    b.Property<bool?>("establoqueado_usuario")
                         .HasColumnType("boolean");
 
                     b.Property<DateTime?>("fch_alta_usuario")

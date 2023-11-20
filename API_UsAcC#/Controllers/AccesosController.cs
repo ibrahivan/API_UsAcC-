@@ -12,16 +12,16 @@ namespace API_UsAcC_.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AccesoesController : ControllerBase
+    public class AccesosController : ControllerBase
     {
         private readonly Contexto _context;
 
-        public AccesoesController(Contexto context)
+        public AccesosController(Contexto context)
         {
             _context = context;
         }
 
-        // GET: api/Accesoes
+        // GET: api/Accesos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Acceso>>> Getaccesos()
         {
@@ -32,7 +32,7 @@ namespace API_UsAcC_.Controllers
             return await _context.accesos.ToListAsync();
         }
 
-        // GET: api/Accesoes/5
+        // GET: api/Accesos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Acceso>> GetAcceso(long id)
         {
@@ -50,7 +50,7 @@ namespace API_UsAcC_.Controllers
             return acceso;
         }
 
-        // PUT: api/Accesoes/5
+        // PUT: api/Accesos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAcceso(long id, Acceso acceso)
@@ -81,7 +81,7 @@ namespace API_UsAcC_.Controllers
             return NoContent();
         }
 
-        // POST: api/Accesoes
+        // POST: api/Accesos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Acceso>> PostAcceso(Acceso acceso)
@@ -96,7 +96,7 @@ namespace API_UsAcC_.Controllers
             return CreatedAtAction("GetAcceso", new { id = acceso.id_acceso }, acceso);
         }
 
-        // DELETE: api/Accesoes/5
+        // DELETE: api/Accesos/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAcceso(long id)
         {
